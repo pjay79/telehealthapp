@@ -12,8 +12,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.welcome}>TeleHealth App</Text>
+        <Text style={styles.instructions}>PROD</Text>
         <Text style={styles.instructions}>{instructions}</Text>
     </View>
     </NavigationContainer>
