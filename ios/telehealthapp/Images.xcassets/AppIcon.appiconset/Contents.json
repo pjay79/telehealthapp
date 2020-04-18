@@ -3,55 +3,55 @@
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-20@2x.png",
+      "filename" : "telehealthprod-20@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "20x20",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-20@3x.png",
+      "filename" : "telehealthprod-20@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-29@2x.png",
+      "filename" : "telehealthprod-29@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "29x29",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-29@3x.png",
+      "filename" : "telehealthprod-29@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-40@2x.png",
+      "filename" : "telehealthprod-40@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-40@3x.png",
+      "filename" : "telehealthprod-40@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-60@2x.png",
+      "filename" : "telehealthprod-60@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "telehealthtest-60@3x.png",
+      "filename" : "telehealthprod-60@3x.png",
       "scale" : "3x"
     },
     {
       "size" : "1024x1024",
       "idiom" : "ios-marketing",
-      "filename" : "telehealthtest-1024.png",
+      "filename" : "telehealthprod-1024.png",
       "scale" : "1x"
     }
   ],

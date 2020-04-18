@@ -7,7 +7,9 @@ project 'telehealthapp',
         'Dev.Debug' => :debug,
         'Dev.Release' => :release, 
         'Test.Debug' => :debug,
-        'Test.Release' => :release
+        'Test.Release' => :release,
+        'Prod.Debug' => :debug,
+        'Prod.Release' => :release
 
 target 'telehealthapp' do
   rnPrefix = "../node_modules/react-native"
