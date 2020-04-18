@@ -13,8 +13,7 @@ export default function App() {
     <NavigationContainer>
       <View style={styles.container}>
         <Text style={styles.welcome}>TeleHealth App</Text>
-        <Text style={styles.instructions}>PROD</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.instructions}>Coming Soon</Text>
     </View>
     </NavigationContainer>
   );
