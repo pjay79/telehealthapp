@@ -1,0 +1,17 @@
+{
+  "name": "telehealthapp",
+  "displayName": "telehealthapp",
+  "expo": {
+    "name": "telehealthapp",
+    "slug": "telehealthapp",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
