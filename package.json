@@ -1,11 +1,16 @@
 {
   "main": "index.js",
   "scripts": {
+    "ios": "react-native run-ios",
     "android": "react-native run-android",
+    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/telehealthapp/main.jsbundle' --dev=false --platform='ios' --assets-dest='./ios'",
+    "bundle:android:js": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle",
     "android:dev": "react-native run-android --variant=devDebug --appIdSuffix=dev",
     "android:qa": "react-native run-android --variant=qaDebug --appIdSuffix=qa",
     "android:prod": "react-native run-android --variant=prodDebug --appIdSuffix=prod",
-    "ios": "react-native run-ios",
+    "android:dev:release": "yarn bundle:android:js && cd android && ./gradlew assembleDevRelease  && adb install -r app/build/outputs/apk/dev/release/app-dev-release.apk",
+    "android:qa:release": "yarn bundle:android:js && cd android && ./gradlew assembleQaRelease  && adb install -r app/build/outputs/apk/qa/release/app-qa-release.apk",
+    "android:prod:release": "yarn bundle:android:js && cd android && ./gradlew assembleProdRelease && adb install -r app/build/outputs/apk/prod/release/app-prod-release.apk",
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest"
