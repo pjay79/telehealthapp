@@ -30,11 +30,13 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = telehealthapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = telehealthapp/main.m; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AF772405025FB5155038C48 /* Pods-telehealthapp.prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telehealthapp.prod.release.xcconfig"; path = "Target Support Files/Pods-telehealthapp/Pods-telehealthapp.prod.release.xcconfig"; sourceTree = "<group>"; };
 		3B47C5AFCB8BDE514B7D1AC6 /* Pods-telehealthapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telehealthapp.debug.xcconfig"; path = "Target Support Files/Pods-telehealthapp/Pods-telehealthapp.debug.xcconfig"; sourceTree = "<group>"; };
 		632DB83CFD085E9C8EDAD839 /* Pods-telehealthapp.test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telehealthapp.test.release.xcconfig"; path = "Target Support Files/Pods-telehealthapp/Pods-telehealthapp.test.release.xcconfig"; sourceTree = "<group>"; };
 		64ED6A7DECEA9D15FC50F6D0 /* Pods-telehealthapp.test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telehealthapp.test.debug.xcconfig"; path = "Target Support Files/Pods-telehealthapp/Pods-telehealthapp.test.debug.xcconfig"; sourceTree = "<group>"; };
 		8AC623DBF3A3E2CB072F81F2 /* Pods-telehealthapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telehealthapp.release.xcconfig"; path = "Target Support Files/Pods-telehealthapp/Pods-telehealthapp.release.xcconfig"; sourceTree = "<group>"; };
 		D43FF9D506E70904424FA7E9 /* libPods-telehealthapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-telehealthapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28972A422C1C19C34F65FE7 /* Pods-telehealthapp.prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-telehealthapp.prod.debug.xcconfig"; path = "Target Support Files/Pods-telehealthapp/Pods-telehealthapp.prod.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +88,8 @@
 				8AC623DBF3A3E2CB072F81F2 /* Pods-telehealthapp.release.xcconfig */,
 				64ED6A7DECEA9D15FC50F6D0 /* Pods-telehealthapp.test.debug.xcconfig */,
 				632DB83CFD085E9C8EDAD839 /* Pods-telehealthapp.test.release.xcconfig */,
+				E28972A422C1C19C34F65FE7 /* Pods-telehealthapp.prod.debug.xcconfig */,
+				3AF772405025FB5155038C48 /* Pods-telehealthapp.prod.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -603,7 +607,7 @@
 		};
 		AC96BA19244AC75B000C4D5B /* Prod.Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B47C5AFCB8BDE514B7D1AC6 /* Pods-telehealthapp.debug.xcconfig */;
+			baseConfigurationReference = E28972A422C1C19C34F65FE7 /* Pods-telehealthapp.prod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = "";
@@ -670,7 +674,7 @@
 		};
 		AC96BA1B244AC767000C4D5B /* Prod.Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AC623DBF3A3E2CB072F81F2 /* Pods-telehealthapp.release.xcconfig */;
+			baseConfigurationReference = 3AF772405025FB5155038C48 /* Pods-telehealthapp.prod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = "";
