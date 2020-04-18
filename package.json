@@ -2,6 +2,9 @@
   "main": "index.js",
   "scripts": {
     "android": "react-native run-android",
+    "android:dev": "react-native run-android --variant=devDebug --appIdSuffix=dev",
+    "android:qa": "react-native run-android --variant=qaDebug --appIdSuffix=qa",
+    "android:prod": "react-native run-android --variant=prodDebug --appIdSuffix=prod",
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
