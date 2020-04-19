@@ -17,6 +17,7 @@
 #import <AppCenterReactNative.h>
 #import <AppCenterReactNativeAnalytics.h>
 #import <AppCenterReactNativeCrashes.h>
+#import <CodePush/CodePush.h>
 
 @interface AppDelegate ()
 
@@ -76,7 +77,7 @@
 #ifdef DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
 #else
-  return [[EXUpdatesAppController sharedInstance] launchAssetUrl];
+  return [CodePush bundleURL];
 #endif
 }
 
