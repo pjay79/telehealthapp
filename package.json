@@ -1,4 +1,5 @@
 {
+  "name": "telehealthapp",
   "main": "index.js",
   "scripts": {
     "ios": "react-native run-ios",
