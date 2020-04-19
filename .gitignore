@@ -60,3 +60,10 @@ buck-out/
 
 # Expo
 .expo/*
+
+# Env
+.env*
+
+# react-native-config codegen
+ios/tmp.xcconfig
+ios/tmp/envfile
