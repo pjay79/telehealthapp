@@ -16,8 +16,8 @@
     "codepush:android:dev": "appcenter codepush release-react -a pjay79/TeleHealthApp-Dev-Android",
     "codepush:ios:test": "appcenter codepush release-react -a pjay79/TeleHealthApp-Test-iOS",
     "codepush:android:test": "appcenter codepush release-react -a pjay79/TeleHealthApp-Test-Android",
-    "codepush:ios:prod": "appcenter codepush release-react -a pjay79/TeleHealthApp-Prod-iOS",
-    "codepush:android:prod": "appcenter codepush release-react -a pjay79/TeleHealthApp-Prod-Android",
+    "codepush:ios:prod": "appcenter codepush release-react -a pjay79/TeleHealthApp-Prod-iOS -d Production",
+    "codepush:android:prod": "appcenter codepush release-react -a pjay79/TeleHealthApp-Prod-Android -d Production",
     "web": "expo start --web",
     "start": "react-native start",
     "test": "jest"
