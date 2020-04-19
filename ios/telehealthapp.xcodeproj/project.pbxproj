@@ -23,7 +23,7 @@
 		0731D3B524204D62009CAE85 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Expo.plist; path = telehealthapp/Supporting/Expo.plist; sourceTree = "<group>"; };
 		07C2E6E3243282B30028AF0A /* app.manifest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = app.manifest; path = telehealthapp/Supporting/app.manifest; sourceTree = "<group>"; };
 		07C2E6E4243282B30028AF0A /* app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = app.bundle; path = telehealthapp/Supporting/app.bundle; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* TeleHealth App Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TeleHealth App Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = telehealthapp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = telehealthapp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* TeleHealth App Dev.app */,
+				13B07F961A680F5B00A75B9A /* DEV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,7 +148,7 @@
 			);
 			name = telehealthapp;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* TeleHealth App Dev.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* DEV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -293,8 +293,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "TeleHealth App Dev";
+				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.dev;
+				PRODUCT_NAME = DEV;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -313,8 +313,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "TeleHealth App Dev";
+				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.dev;
+				PRODUCT_NAME = DEV;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -489,8 +489,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "TeleHealth App Test";
+				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.test;
+				PRODUCT_NAME = TEST;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Test.Debug;
@@ -556,8 +556,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "TeleHealth App Test";
+				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.test;
+				PRODUCT_NAME = TEST;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Test.Release;
@@ -631,8 +631,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "TeleHealth App";
+				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth;
+				PRODUCT_NAME = TeleHealth;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Prod.Debug;
@@ -698,8 +698,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "TeleHealth App";
+				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth;
+				PRODUCT_NAME = TeleHealth;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Prod.Release;
