@@ -48,4 +48,34 @@ platform :ios do
     )
     upload_to_testflight(skip_waiting_for_build_processing: true)
   end
+
+  desc "Get certificates"
+  lane :certificates do |options|
+    match(
+      type: "appstore",
+      app_identifier: ["app.telehealth.dev, app.telehealth.test, app.telehealth"],
+      username:"praveen.jayarajan@gmail.com",
+      readonly: true,
+      clone_branch_directly: true,
+      git_url: "https://github.com/pjay79/telehealthapp-certificates"
+    )
+  end
+  
+  desc "Install appstore and development certificates for local development"
+  lane :devcertificates do |options|
+    match(
+      type: "appstore",
+      app_identifier: ["app.telehealth.dev, app.telehealth.test, app.telehealth"],
+      username:"praveen.jayarajan@gmail.com",
+      readonly: false,
+      git_url: "https://github.com/pjay79/telehealthapp-certificates"
+    )
+    match(
+      type: "development",
+      app_identifier: ["app.telehealth.dev, app.telehealth.test, app.telehealth"],
+      username:"praveen.jayarajan@gmail.com",
+      readonly: false,
+      git_url: "https://github.com/pjay79/telehealthapp-certificates"
+    )
+  end
 end
