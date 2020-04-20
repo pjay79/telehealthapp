@@ -290,8 +290,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = .dev;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 7CXP8N9R4U;
 				INFOPLIST_FILE = telehealthapp/Info.plist;
@@ -301,9 +302,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = app.reactnative.telehealthdev;
 				PRODUCT_NAME = DEV;
-				PROVISIONING_PROFILE_SPECIFIER = "match Development app.telehealth.dev";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development app.reactnative.telehealthdev";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -314,8 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = .dev;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = 7CXP8N9R4U;
 				INFOPLIST_FILE = telehealthapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -324,9 +326,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = app.reactnative.telehealthdev;
 				PRODUCT_NAME = DEV;
-				PROVISIONING_PROFILE_SPECIFIER = "match Development app.telehealth.dev";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore app.reactnative.telehealthdev";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -492,8 +494,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = .test;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 7CXP8N9R4U;
 				INFOPLIST_FILE = telehealthapp/Info.plist;
@@ -503,9 +506,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.test;
+				PRODUCT_BUNDLE_IDENTIFIER = app.reactnative.telehealthtest;
 				PRODUCT_NAME = TEST;
-				PROVISIONING_PROFILE_SPECIFIER = "match Development app.telehealth.test";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development app.reactnative.telehealthtest";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Test.Debug;
@@ -563,8 +566,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = .test;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = 7CXP8N9R4U;
 				INFOPLIST_FILE = telehealthapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -573,9 +577,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth.test;
+				PRODUCT_BUNDLE_IDENTIFIER = app.reactnative.telehealthtest;
 				PRODUCT_NAME = TEST;
-				PROVISIONING_PROFILE_SPECIFIER = "match Development app.telehealth.test";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore app.reactnative.telehealthtest";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Test.Release;
@@ -640,8 +644,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 17;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = 7CXP8N9R4U;
 				INFOPLIST_FILE = telehealthapp/Info.plist;
@@ -651,9 +656,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth;
+				PRODUCT_BUNDLE_IDENTIFIER = app.reactnative.telehealth;
 				PRODUCT_NAME = TeleHealth;
-				PROVISIONING_PROFILE_SPECIFIER = "match Development app.telehealth";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development app.reactnative.telehealth";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Prod.Debug;
@@ -711,8 +716,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon$(BUNDLE_ID_SUFFIX)";
 				BUNDLE_ID_SUFFIX = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_TEAM = 7CXP8N9R4U;
 				INFOPLIST_FILE = telehealthapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -721,9 +727,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.telehealth;
+				PRODUCT_BUNDLE_IDENTIFIER = app.reactnative.telehealth;
 				PRODUCT_NAME = TeleHealth;
-				PROVISIONING_PROFILE_SPECIFIER = "match Development app.telehealth";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore app.reactnative.telehealth";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Prod.Release;
