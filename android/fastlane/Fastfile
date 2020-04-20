@@ -23,19 +23,9 @@ platform :android do
 
   desc "Deploy a new Dev version to Google Play"
   lane :dev do
-    # gradle(task: "clean")
+    gradle(task: "clean")
     gradle(
       task: "bundleDevReleaseJsAndAssets",
-      flags: "--no-daemon"
-    )
-    gradle(
-      task: "assemble",
-      build_type: "devRelease",
-      flags: "-x bundleDevReleaseJsAndAssets --no-daemon"
-    )
-    gradle(
-      task: "bundle",
-      build_type: "devRelease",
       flags: "--no-daemon"
     )
     upload_to_play_store(
