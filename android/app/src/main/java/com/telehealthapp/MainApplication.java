@@ -30,16 +30,6 @@ import javax.annotation.Nullable;
 import com.microsoft.codepush.react.CodePush;
 
 public class MainApplication extends Application implements ReactApplication {
-  private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
-    ...
-    // 2. Override the getJSBundleFile method in order to let
-    // the CodePush runtime determine where to get the JS
-    // bundle location from on each app start
-    @Override
-    protected String getJSBundleFile() {
-        return CodePush.getJSBundleFile();
-    }
-  };
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
     new BasePackageList().getPackageList(),
     null
@@ -64,12 +54,8 @@ public class MainApplication extends Application implements ReactApplication {
     }
 
     @Override
-    protected @Nullable String getJSBundleFile() {
-      if (BuildConfig.DEBUG) {
-        return super.getJSBundleFile();
-      } else {
-        return UpdatesController.getInstance().getLaunchAssetFile();
-      }
+    protected String getJSBundleFile() {
+        return CodePush.getJSBundleFile();
     }
 
     @Override

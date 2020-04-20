@@ -1,6 +1,5 @@
 apply plugin: "com.android.application"
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
-apply from: "../../node_modules/react-native/react.gradle"
 apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 
 import com.android.build.OutputFile
@@ -171,19 +170,19 @@ android {
     productFlavors {
         dev {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'com.telehealthapp.dev'
+            applicationId 'app.reactnative.telehealthdev'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }
         qa {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'com.telehealthapp.qa'
+            applicationId 'app.reactnative.telehealthqa'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }
         prod {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'com.telehealthapp'
+            applicationId 'app.reactnative.telehealthapp'
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }
