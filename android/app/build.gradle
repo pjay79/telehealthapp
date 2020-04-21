@@ -136,7 +136,7 @@ android {
         applicationId "com.telehealthapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode 5
         versionName "1.0"
     }
     splits {
@@ -178,19 +178,19 @@ android {
     productFlavors {
         dev {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'app.reactnative.telehealthdev'
+            applicationId "com.telehealthapp.dev"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }
         qa {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'app.reactnative.telehealthqa'
+            applicationId "com.telehealthapp.qa"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }
         prod {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'app.reactnative.telehealthapp'
+            applicationId "com.telehealthapp"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }

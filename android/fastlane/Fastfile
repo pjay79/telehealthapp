@@ -21,14 +21,29 @@ platform :android do
     gradle(task: "test")
   end
 
+  lane :bump_version_code do
+    path = '../app/build.gradle'
+    re = /versionCode\s+(\d+)/ 
+  
+    s = File.read(path)
+    versionCode = s[re, 1].to_i
+    s[re, 1] = (versionCode + 1).to_s
+  
+    f = File.new(path, 'w')
+    f.write(s)
+    f.close
+  end
+
   desc "Deploy a new Dev version to Google Play"
   lane :dev do
     gradle(task: "clean")
+    bump_version_code
     gradle(
-      task: "bundleDevReleaseJsAndAssets",
+      task: "bundleDevRelease",
       flags: "--no-daemon"
     )
     upload_to_play_store(
+      release_status: "draft",
       track: "alpha"
     )
   end
