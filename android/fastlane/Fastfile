@@ -47,4 +47,32 @@ platform :android do
       track: "alpha"
     )
   end
+
+  desc "Deploy a new QA version to Google Play"
+  lane :dev do
+    gradle(task: "clean")
+    bump_version_code
+    gradle(
+      task: "bundleQaRelease",
+      flags: "--no-daemon"
+    )
+    upload_to_play_store(
+      release_status: "draft",
+      track: "alpha"
+    )
+  end
+
+  desc "Deploy a new Prod version to Google Play"
+  lane :dev do
+    gradle(task: "clean")
+    bump_version_code
+    gradle(
+      task: "bundleProdRelease",
+      flags: "--no-daemon"
+    )
+    upload_to_play_store(
+      release_status: "draft",
+      track: "alpha"
+    )
+  end
 end
