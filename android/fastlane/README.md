@@ -31,6 +31,16 @@ fastlane android bump_version_code
 fastlane android dev
 ```
 Deploy a new Dev version to Google Play
+### android qa
+```
+fastlane android qa
+```
+Deploy a new QA version to Google Play
+### android prod
+```
+fastlane android prod
+```
+Deploy a new Prod version to Google Play
 
 ----
 

@@ -43,13 +43,14 @@ platform :android do
       flags: "--no-daemon"
     )
     upload_to_play_store(
+      package_name: "com.telehealthapp.dev",
       release_status: "draft",
-      track: "alpha"
+      track: "alpha",
     )
   end
 
   desc "Deploy a new QA version to Google Play"
-  lane :dev do
+  lane :qa do
     gradle(task: "clean")
     bump_version_code
     gradle(
@@ -57,13 +58,14 @@ platform :android do
       flags: "--no-daemon"
     )
     upload_to_play_store(
+      package_name: "com.telehealthapp.qa",
       release_status: "draft",
-      track: "alpha"
+      track: "alpha",
     )
   end
 
   desc "Deploy a new Prod version to Google Play"
-  lane :dev do
+  lane :prod do
     gradle(task: "clean")
     bump_version_code
     gradle(
@@ -71,6 +73,7 @@ platform :android do
       flags: "--no-daemon"
     )
     upload_to_play_store(
+      package_name: "com.telehealthapp",
       release_status: "draft",
       track: "alpha"
     )

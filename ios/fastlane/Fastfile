@@ -28,10 +28,14 @@ platform :ios do
         method: "app-store",
         provisioningProfiles: { 
           "app.reactnative.telehealthdev" => "match AppStore app.reactnative.telehealthdev",
-        }
+        },
       }
     )
-    upload_to_testflight(skip_waiting_for_build_processing: true)
+    upload_to_testflight(
+      username: "praveen.jayarajan@gmail.com",
+      team_id: '119188381',
+      skip_waiting_for_build_processing: true
+    )
   end
 
   desc "Push a new test build to TestFlight"
@@ -46,10 +50,14 @@ platform :ios do
         method: "app-store",
         provisioningProfiles: { 
           "app.reactnative.telehealthtest" => "match AppStore app.reactnative.telehealthtest",
-        }
+        },
       }
     )
-    upload_to_testflight(skip_waiting_for_build_processing: true)
+    upload_to_testflight(
+      username: "praveen.jayarajan@gmail.com",
+      team_id: '119188381',
+      skip_waiting_for_build_processing: true
+    )
   end
 
   desc "Push a new prod build to TestFlight"
@@ -64,10 +72,14 @@ platform :ios do
         method: "app-store",
         provisioningProfiles: { 
           "app.reactnative.telehealth" => "match AppStore app.reactnative.telehealth",
-        }
+        },
       }
     )
-    upload_to_testflight(skip_waiting_for_build_processing: true)
+    upload_to_testflight(
+      username: "praveen.jayarajan@gmail.com",
+      team_id: '119188381',
+      skip_waiting_for_build_processing: true
+    )
   end
 
   desc "Get certificates"
