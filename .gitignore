@@ -70,6 +70,3 @@ ios/tmp/envfile
 
 # Google Play Service Account
 android/app/Google*
-
-# KeyStore
-android/app/my-upload-key.keystore
