@@ -1,6 +1,5 @@
 apply plugin: "com.android.application"
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
-apply from: "../../node_modules/react-native/react.gradle"
 apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
 
 import com.android.build.OutputFile
@@ -81,12 +80,11 @@ import com.android.build.OutputFile
 project.ext.react = [
     entryFile: "index.js",
     enableHermes: false,
-    bundleInRelease: false
+    bundleInRelease: true
 ]
 
 apply from: '../../node_modules/react-native-unimodules/gradle.groovy'
 apply from: "../../node_modules/react-native/react.gradle"
-apply from: "../../node_modules/expo-updates/expo-updates.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -137,8 +135,9 @@ android {
         applicationId "com.telehealthapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode 6
         versionName "1.0"
+        resValue "string", "build_config_package", "com.telehealthapp"
     }
     splits {
         abi {
@@ -155,6 +154,14 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+        release {
+            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+                storeFile file(MYAPP_UPLOAD_STORE_FILE)
+                storePassword System.getProperty("APPCENTER_KEYSTORE_PASSWORD") ?: MYAPP_UPLOAD_STORE_PASSWORD
+                keyAlias System.getProperty("APPCENTER_KEY_ALIAS") ?:  MYAPP_UPLOAD_KEY_ALIAS
+                keyPassword System.getProperty("APPCENTER_KEY_PASSWORD") ?: MYAPP_UPLOAD_KEY_PASSWORD
+            }
+        }
     }
     buildTypes {
         debug {
@@ -163,7 +170,7 @@ android {
         release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://facebook.github.io/react-native/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
@@ -171,19 +178,19 @@ android {
     productFlavors {
         dev {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'com.telehealthapp.dev'
+            applicationId "com.telehealthapp.dev"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }
         qa {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'com.telehealthapp.qa'
+            applicationId "com.telehealthapp.qa"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }
         prod {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId 'com.telehealthapp'
+            applicationId "com.telehealthapp"
             targetSdkVersion rootProject.ext.targetSdkVersion
             resValue "string", "build_config_package", "com.myapp"
         }

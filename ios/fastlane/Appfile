@@ -1,0 +1,7 @@
+# app_identifier(["app.reactnative.telehealth"]) # The bundle identifier of your app
+apple_id("praveen.jayarajan@gmail.com") # Your Apple email address
+itc_team_id("119188381") # App Store Connect Team ID
+team_id("7CXP8N9R4U") # Developer Portal Team ID
+xcode_select "/Applications/Xcode-11.2.1.app" # xCode Version
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
